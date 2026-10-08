@@ -1,8 +1,5 @@
 
-let pos = 0;
 
-
-let direction = 0;
 const pacMen = []; // This array holds all the pacmen
 
 // This function returns an object with random values
@@ -56,7 +53,7 @@ function update() {
 
         checkCollisions(item);
 
-        // item.position.x += item.velocity.x;
+        item.position.x += item.velocity.x;
         item.position.y += item.velocity.y;
 
         // Update image position
